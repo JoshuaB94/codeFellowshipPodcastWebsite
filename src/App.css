@@ -1,4 +1,9 @@
-.app {
+.app{
+  background-color: #07273B;
+  height: 100vh;
+}
+
+.text-logo {
+  color: white;
   text-align: center;
-  margin: auto;
 }

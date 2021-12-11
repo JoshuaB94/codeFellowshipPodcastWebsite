@@ -1,20 +1,24 @@
 import React from 'react';
 import './App.css';
-import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx';
+// import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx';
 import TopBar from './components/TopBar/TopBar.jsx';
 import {Container} from '@chakra-ui/react';
+import ReactPlayer from 'react-player';
 
 function App() {
   return (
-    <div className="app">
+    <Container maxW='container.xl' className="app">
       <TopBar />
-      <h1>codeFellowship( )</h1>
+      <section className ='video-area'>
+        <h1 className="text-logo">codeFellowship( )</h1> 
 
-      <div className="video-container">
-        <VideoPlayer />
-      </div>
+        <ReactPlayer className='videopodcast-player'
+        url= 'https://youtu.be/_lAI4n6rODE' controls width='80%' height='80vh'/>
 
-    </div>
+      </section>
+
+      {/* <VideoPlayer /> */}
+    </Container>
   );
 }
 

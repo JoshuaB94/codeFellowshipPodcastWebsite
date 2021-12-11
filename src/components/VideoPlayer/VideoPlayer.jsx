@@ -1,28 +1,23 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
 import './VideoPlayer.css'
-import {AspectRatio} from '@chakra-ui/react';
-import {Center} from '@chakra-ui/react';
+import {AspectRatio, Container, Box} from '@chakra-ui/react';
 
-class ResponsiveVideoPlayer extends Component {
+class VideoPlayer extends Component {
     render () {
         return (
-            <div className='videoplayer-wrapper'>
-                <AspectRatio maxW='50%' ratio={16 / 9}>
-                    <Center>
+            <Container maxW='container.md' centerContent className='video-wrapper'>
+                <Box>
+                    <AspectRatio maxW='100%' ratio={16 / 9}>
                         <ReactPlayer 
                         className='videopodcast-player'
                         url= 'https://youtu.be/_lAI4n6rODE'
-                        controls
-                        width= '100%'
-                        height='100%'
-                        />
-                    </Center>
-                </AspectRatio>
-                
-            </div>
+                        controls/>
+                    </AspectRatio>
+                </Box>
+            </Container>
         )
     }
 }
 
-export default ResponsiveVideoPlayer;
+export default VideoPlayer;
