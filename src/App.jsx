@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-// import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx';
 import {Container, Button} from '@chakra-ui/react';
 import ReactPlayer from 'react-player';
 import {FaDiscord, FaTwitter, FaTwitch , FaYoutube} from 'react-icons/fa'
