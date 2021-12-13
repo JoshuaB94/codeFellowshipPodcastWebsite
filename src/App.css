@@ -1,6 +1,12 @@
 .app{
   background-color: #07273B;
   height: 100vh;
+  
+}
+
+.youtube-icon {
+  margin-left: 95%;
+  margin-top: 1%;
 }
 
 .text-logo {
@@ -15,6 +21,11 @@
 }
 
 .icons {
+  color: white;
+  text-align: center;
+}
+
+.copyright {
   color: white;
   text-align: center;
 }
