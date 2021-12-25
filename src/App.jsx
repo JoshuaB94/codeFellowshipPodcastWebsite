@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Container, Button} from '@chakra-ui/react';
 import ReactPlayer from 'react-player';
-import {FaDiscord, FaTwitter, FaTwitch , FaYoutube} from 'react-icons/fa'
+import {FaDiscord, FaTwitter, FaTwitch} from 'react-icons/fa'
 
 function App() {
   return (
@@ -10,11 +10,6 @@ function App() {
 
       {/* Subscribe Button*/}
       <Button className="subscribe-cta">Subscribe</Button> 
-      
-      {/* youtube icon */}
-      <div className='youtube-icon'>
-        <FaYoutube style={{color: 'red', fontSize:'50px'}} />
-      </div>
 
       {/* Main Content */}
       <section className ='video-area'>
@@ -39,9 +34,6 @@ function App() {
           <p>© 2021 - codeFellowship( ) &#123; the podcast &#125;</p>
         </div>
       </section>
-      
-
-      {/* <VideoPlayer /> */}
     </Container>
   );
 }
