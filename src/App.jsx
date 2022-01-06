@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {FaDiscord, FaTwitter, FaTwitch} from 'react-icons/fa'
+import VideoPlayerArea from './components/VideoPlayerArea/VideoPlayerArea';
 
 function App() {
   return (
@@ -33,8 +34,14 @@ function App() {
     //     </div>
     //   </section>
     // </div>
-    <div className="refactored">
-      Refactoring...
+    <div className="app-container">
+      <div>Logo Goes Here</div>
+
+      <VideoPlayerArea />
+
+      <div className='icons'>
+        <FaDiscord size={35} /> <FaTwitter size={40} /> <FaTwitch size={35} />
+      </div>
     </div>
   );
 }
