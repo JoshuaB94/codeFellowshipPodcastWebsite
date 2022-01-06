@@ -1,47 +1,29 @@
 import React from 'react';
 import './App.css';
-import {FaDiscord, FaTwitter, FaTwitch} from 'react-icons/fa'
-import VideoPlayerArea from './components/VideoPlayerArea/VideoPlayerArea';
+import { FaDiscord, FaTwitter, FaSpotify } from 'react-icons/fa'
+import { SiAnchor } from 'react-icons/si';
+import YoutubePlayer from './components/YoutubePlayer/YoutubePlayer';
 
 function App() {
   return (
-    // <div className="app">
-
-    //   {/* Subscribe Button*/}
-    //   <Button className="subscribe-cta">Subscribe</Button> 
-
-    //   {/* Main Content */}
-    //   <section className ='video-area'>
-    //     <h1 className="text-logo">codeFellowship( )</h1> 
-
-    //     {/* Video Player */}
-    //     <div className='player'>
-    //       <ReactPlayer className='videopodcast-player'
-    //       url= 'https://youtu.be/_lAI4n6rODE' controls width='80%' height='80vh'/>
-    //     </div>
-
-    //     {/* icons */}
-    //     <div className='icons'>
-    //       <FaDiscord size={35} /> <FaTwitter size={40} /> <FaTwitch size={35} />
-    //     </div>
-
-    //     {/* Main Body Text */}
-    //     <h1 className='text-body'>// FULL SITE COMING SOON</h1>
-
-    //     {/* copyright */}
-    //     <div className='copyright' >
-    //       <p>© 2021 - codeFellowship( ) &#123; the podcast &#125;</p>
-    //     </div>
-    //   </section>
-    // </div>
     <div className="app-container">
-      <div>Logo Goes Here</div>
+      <div className="text-logo">Logo Goes Here</div>
 
-      <VideoPlayerArea />
+      <YoutubePlayer embedId='m6v3vARKZ8g' />
 
       <div className='icons'>
-        <FaDiscord size={35} /> <FaTwitter size={40} /> <FaTwitch size={35} />
+        <FaDiscord size={35} className="discord-icon" /> 
+        <FaTwitter size={35} className="twitter-icon" /> 
+        <FaSpotify size={35} className="spotify-icon" /> 
+        <SiAnchor size={35} className="anchor-icon"/>
       </div>
+
+      <h2>// FULL SITE COMING</h2>
+
+      <div className="copyright">
+        <p>© 2022 - codeFellowship( ) &#123; the podcast &#125;</p>
+      </div>
+
     </div>
   );
 }
