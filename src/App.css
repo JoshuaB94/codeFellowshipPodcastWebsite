@@ -29,3 +29,9 @@
   color: white;
   text-align: center;
 }
+
+.refactored {
+  background-color: #07273B;
+  height: 100vh;
+  width: 100%;
+}
