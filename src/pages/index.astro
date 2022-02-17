@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Tour from '../components/Tour.astro';
+
 // You can import components from any supported Framework here!
 
 
@@ -16,46 +16,24 @@ let title = 'My Astro Site';
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width" />
+
 	<title>{title}</title>
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-		@import "../styles/home.css";
-	</style>
-
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
+	<link href="/dist/output.css" rel="stylesheet" />
+	<link href="./src/styles/input.css">
 </head>
 <body>
-	<main>
-		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header>
+	<div class="container text-center">
+		<h1 class="text-4xl font-medium mb-5 tracking-widest uppercase">
+    		Hello World!
+  		</h1>
+		<h2 class="text-5xl font-extrabold mb-8 uppercase">
+			This is my first Tailwind CSS + Astro build project.
+		</h2>
 
-		<Tour />
-
-		<!--
-
-		You can also use imported framework components directly in your markup!
-		
-		Note: by default, these components are NOT interactive on the client.
-		The `:visible` directive tells Astro to make it interactive.
-		
-		See https://docs.astro.build/core-concepts/component-hydration/ 
-
-		-->
-
-	</main>
+		<button class="px-8 py-3 bg-black text-white hover:bg-violet-600 rounded-full">Clicky Button</button>
+	</div>
 </body>
 </html>
