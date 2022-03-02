@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import Navbar from '../components/Navbar/Navbar.astro';
+import { Icon } from 'astro-icon';
 
 
 // Component Script:
@@ -25,15 +26,19 @@ let title = 'codeFellowship( ) Podcast';
 </head>
 <body>
 	<Navbar />
-	<div class="container text-center">
-		<h1 class="text-4xl font-medium mb-5 tracking-widest uppercase">
-    		Hello World!
-  		</h1>
-		<h2 class="text-5xl font-extrabold mb-8 uppercase">
-			This is my first Tailwind CSS + Astro build project.
-		</h2>
-
-		<button class="px-8 py-3 bg-black text-white hover:bg-violet-600 rounded-full">Clicky Button</button>
+	<div class="hero-section">
+		<div class="latest-episode">
+		
+		</div>
+		<div>
+			<h1>Weekly Episodes</h1>
+			<h4>Every Wednesday</h4>
+			<div set:html={`<Icon name="mdi:youtube"/>`}>
+				<Icon name="mdi:youtube" size={40} />
+				<Icon name="mdi:podcast" size={40} />
+				<Icon name="mdi:spotify" size={40} />
+			</div>
+		</div>
 	</div>
 </body>
 </html>
