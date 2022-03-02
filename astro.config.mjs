@@ -12,5 +12,10 @@ export default {
     // port: 3000,             // The port to run the dev server on.
     tailwindConfig: './tailwind.config.js'
   },
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
   renderers: [],
 };

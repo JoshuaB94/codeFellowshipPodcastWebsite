@@ -1,14 +1,13 @@
 ---
 // Component Imports
-
-// You can import components from any supported Framework here!
+import Navbar from '../components/Navbar.astro';
 
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = 'codeFellowship( ) Podcast';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -25,6 +24,7 @@ let title = 'My Astro Site';
 	<link href="./src/styles/input.css">
 </head>
 <body>
+	<Navbar />
 	<div class="container text-center">
 		<h1 class="text-4xl font-medium mb-5 tracking-widest uppercase">
     		Hello World!
