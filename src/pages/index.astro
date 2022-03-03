@@ -27,24 +27,26 @@ let title = 'codeFellowship( ) Podcast';
 </head>
 <body>
 	<Navbar />
-	<div class="hero-section">
-		<div set:html={`<Icon name="ic:round-play-circle"/>`} class="latest-episode">
-			<Icon name="ic:round-play-circle" size={120} class="ply-icon"/>
-		</div>
-
-		<div class="podcast-info">
-			<h1 class="hero-title">Weekly Episodes</h1>
-			<h4 class="hero-subtitle">Every Wednesday</h4>
-			<div set:html={`<Icon name="mdi:youtube"/>`} class="podcast-platforms">
-				<Icon name="mdi:youtube" size={30} class="yt-icon" />
-				<Icon name="mdi:spotify" size={30} class="sptfy-icon"/>
-				<Icon name="mdi:podcast" size={30} class="pd-icon"/>
+	<main>
+		<section class="hero-section">
+			<div set:html={`<Icon name="ic:round-play-circle"/>`} class="latest-episode">
+				<Icon name="ic:round-play-circle" size={120} class="ply-icon"/>
 			</div>
-		</div>
-	</div>
 
-	<div class="core-values-section">
-		
-	</div>
+			<div class="podcast-info">
+				<h1 class="hero-title">Weekly Episodes</h1>
+				<h4 class="hero-subtitle">Every Wednesday</h4>
+				<div set:html={`<Icon name="mdi:youtube"/>`} class="podcast-platforms">
+					<Icon name="mdi:youtube" size={30} class="yt-icon" />
+					<Icon name="mdi:spotify" size={30} class="sptfy-icon"/>
+					<Icon name="mdi:podcast" size={30} class="pd-icon"/>
+				</div>
+			</div>
+		</section>
+
+		<section class="core-values-section">
+
+		</section>
+	</main>
 </body>
 </html>
