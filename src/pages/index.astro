@@ -1,6 +1,7 @@
 ---
 // Component Imports
 import Navbar from '../components/Navbar/Navbar.astro';
+import Blurb from '../components/Blurb/Blurb.astro';
 import { Icon } from 'astro-icon';
 
 
@@ -45,7 +46,29 @@ let title = 'codeFellowship( ) Podcast';
 		</section>
 
 		<section class="core-values-section">
+			<Blurb>
+				<Icon name="noto-v1:latin-cross" slot="blurb-icon" size={65} class="blurb-icon"/>
+				<h3 slot="blurb-title" class="blurb-title">Jesus Christ</h3>
+				<p slot="blurb-text" class="blurb-text">
+					This is where we will establish a statement of our faith in 2-3 sentences. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</Blurb>
 
+			<Blurb>
+				<Icon name="noto-v1:man-technologist" slot="blurb-icon" size={65} class="blurb-icon"/>
+				<h3 slot="blurb-title" class="blurb-title">Coding</h3>
+				<p slot="blurb-text" class="blurb-text">
+					This is where we will establish a statement for coding in 2-3 sentences. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</Blurb>
+
+			<Blurb>
+				<Icon name="noto-v1:globe-showing-americas" slot="blurb-icon" size={65} class="blurb-icon"/>
+				<h3 slot="blurb-title" class="blurb-title">Community</h3>
+				<p slot="blurb-text" class="blurb-text">
+					This is where we will establish a statement for community in 2-3 sentences. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</Blurb>
 		</section>
 	</main>
 </body>
