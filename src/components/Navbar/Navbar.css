@@ -16,20 +16,16 @@
   font-size: 30px;
   width: 20%;
   color: #06273A;
-  /* border: solid 1px;
-  border-color: yellow; */
 }
 
 .navbar-menu {
-  width: 50%;
+  width: 70%;
   margin-left: 30%;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* border: solid 1px;
-  border-color: lightgreen; */
   display: flex;
   justify-content: flex-end;
-  gap: 45px;
+  gap: 15px;
   font-size: 18px;
 }
 
@@ -50,8 +46,46 @@
 
 .menu-link {
   align-self: center;
+  text-transform: uppercase;
 }
 
 .menu-link:hover {
   color: #00EDA0;
+}
+
+/*---Curly Brace/Bracket Hover Effect for Menu  Items---*/
+a:before {
+  content: "{";
+  color: #1c1c1c;
+  margin-right: 10px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+a:after {
+  content: "}";
+  color: #1c1c1c;
+  margin-left: 10px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+a:hover:before,
+a:hover:after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
 }
